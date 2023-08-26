@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import com.opencsv.exceptions.CsvValidationException;
 
 import main.java.pageEvents.CarritoComprasEvents;
-import main.java.pageObjects.CarritoComprasElements;
+import main.java.pageObjects.RegistroLoginElements;
 import main.java.utils.ElementFetch;
 import main.java.utils.Events;
 import main.java.utils.OpenCSV;
