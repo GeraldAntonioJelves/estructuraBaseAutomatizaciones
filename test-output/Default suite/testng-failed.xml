@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.java.carritocompras.CarritoComprasTest">
+      <class name="test.java.carritocompras.DemoWebShopTest">
         <methods>
           <include name="afterTestMethod"/>
           <include name="afterMethodMethod"/>
-          <include name="QAS12"/>
           <include name="beforeMethodMethod"/>
           <include name="beforeTestMethod"/>
+          <include name="CodigoCasoDePrueba"/>
         </methods>
-      </class> <!-- test.java.carritocompras.CarritoComprasTest -->
+      </class> <!-- test.java.carritocompras.DemoWebShopTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
