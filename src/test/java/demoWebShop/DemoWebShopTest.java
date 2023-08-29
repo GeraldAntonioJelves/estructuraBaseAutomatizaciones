@@ -19,7 +19,7 @@ public class DemoWebShopTest extends BaseTest {
 		Utils.infoTestCase("Demo Web Shop",
 				"Validar el registro de Usuario Correctamente");
 
-		RegistroEvents.registrarUsuario(args[0],args[1],args[2],args[3],args[4]);
+		RegistroEvents.registrarUsuario(args[0],args[1],args[2],args[3]);
 
 	}
 	

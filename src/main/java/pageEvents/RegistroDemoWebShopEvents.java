@@ -23,8 +23,7 @@ public class RegistroEvents extends Tests {
 	}
 
 	@BeforeMethod(description = "Realizamos un registro de cuenta")
-	public static void registrarUsuario(String firstName, String lastName, String email, String password,
-			String confirmPassword) {
+	public static void registrarUsuario(String firstName, String lastName, String email, String password) {
 
 		String currentEvent = new Throwable().getStackTrace()[0].getMethodName();
 
@@ -77,7 +76,7 @@ public class RegistroEvents extends Tests {
 			WebElement inputConfirmPasswordElement = elementFetch.getWebElement("XPATH",
 					RegistroLoginElements.inputConfirPassword);
 			wait.until(ExpectedConditions.visibilityOf(inputConfirmPasswordElement));
-			Events.writeOnInput(inputConfirmPasswordElement, confirmPassword);
+			Events.writeOnInput(inputConfirmPasswordElement, password);
 			
 			WebElement inputBotonRegistroElement = elementFetch.getWebElement("XPATH",
 					RegistroLoginElements.inputRegisterBtn);
