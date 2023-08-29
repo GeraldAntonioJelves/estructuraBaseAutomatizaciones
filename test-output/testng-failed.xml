@@ -7,7 +7,7 @@
   <test thread-count="5" name="Clase Automation QA(failed)">
     <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="test.java.carritocompras.DemoWebShopTest">
+      <class name="test.java.demoWebShop.DemoWebShopTest">
         <methods>
           <include name="afterTestMethod"/>
           <include name="afterMethodMethod"/>
@@ -15,7 +15,7 @@
           <include name="beforeTestMethod"/>
           <include name="CodigoCasoDePrueba" invocation-numbers="0"/>
         </methods>
-      </class> <!-- test.java.carritocompras.DemoWebShopTest -->
+      </class> <!-- test.java.demoWebShop.DemoWebShopTest -->
     </classes>
   </test> <!-- Clase Automation QA(failed) -->
 </suite> <!-- Failed suite [Sample Test Suite] -->

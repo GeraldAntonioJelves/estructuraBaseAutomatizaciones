@@ -1,17 +1,11 @@
 package main.java.pageEvents;
 
-import java.util.List;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 
-import main.java.pageObjects.RegistroLoginElements;
 import main.java.utils.ElementFetch;
-import main.java.utils.Events;
 import main.java.utils.Utils;
-import main.java.utils.Validations;
 import test.java.sitioCompras.Tests;
 
 public class CarritoComprasEvents extends Tests{

@@ -1,24 +1,21 @@
 package main.java.pageEvents;
 
-import java.util.List;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 
-import main.java.pageObjects.RegistroLoginElements;
+import main.java.pageObjects.RegistroElements;
 import main.java.utils.ElementFetch;
 import main.java.utils.Events;
 import main.java.utils.Utils;
 import main.java.utils.Validations;
 import test.java.sitioCompras.Tests;
 
-public class RegistroEvents extends Tests {
+public class RegistroDemoWebShopEvents extends Tests {
 
-	public RegistroEvents(WebDriver driver) {
+	public RegistroDemoWebShopEvents(WebDriver driver) {
 		Tests.driver = driver;
 	}
 
@@ -34,13 +31,13 @@ public class RegistroEvents extends Tests {
 			ElementFetch elementFetch = new ElementFetch();
 
 			WebElement aRegistroRelavitoElement = elementFetch.getWebElement("XPATH",
-					RegistroLoginElements.aRegisterRelativo);
+					RegistroElements.aRegisterRelativo);
 			wait.until(ExpectedConditions.visibilityOf(aRegistroRelavitoElement));
 			Events.clickButton(aRegistroRelavitoElement);
 			
 			Thread.sleep(2000);
 			WebElement textTetxoRegistroElement = elementFetch.getWebElement("XPATH",
-					RegistroLoginElements.TextRegistro);
+					RegistroElements.TextRegistro);
 			wait.until(ExpectedConditions.visibilityOf(textTetxoRegistroElement));
 
 			String textoRegistro = textTetxoRegistroElement.getText();
@@ -49,43 +46,43 @@ public class RegistroEvents extends Tests {
 					"No se ha ingresado a la página correcta", currentEvent);
 			
 			WebElement inputSexoMaleElement = elementFetch.getWebElement("XPATH",
-					RegistroLoginElements.inputSexoM);
+					RegistroElements.inputSexoM);
 			wait.until(ExpectedConditions.visibilityOf(inputSexoMaleElement));
 			Events.clickButton(inputSexoMaleElement);
 			
 			WebElement inputFirstNameElement = elementFetch.getWebElement("XPATH",
-					RegistroLoginElements.inputFirstName);
+					RegistroElements.inputFirstName);
 			wait.until(ExpectedConditions.visibilityOf(inputFirstNameElement));
 			Events.writeOnInput(inputFirstNameElement,firstName);
 			
 			WebElement inputLastNameElement = elementFetch.getWebElement("XPATH",
-					RegistroLoginElements.inputLastName);
+					RegistroElements.inputLastName);
 			wait.until(ExpectedConditions.visibilityOf(inputLastNameElement));
 			Events.writeOnInput(inputLastNameElement, lastName);
 			
 			WebElement inputEmailElement = elementFetch.getWebElement("XPATH",
-					RegistroLoginElements.inputEmail);
+					RegistroElements.inputEmail);
 			wait.until(ExpectedConditions.visibilityOf(inputEmailElement));
 			Events.writeOnInput(inputEmailElement, email);
 			
 			WebElement inputPasswordElement = elementFetch.getWebElement("XPATH",
-					RegistroLoginElements.inputPassword);
+					RegistroElements.inputPassword);
 			wait.until(ExpectedConditions.visibilityOf(inputPasswordElement));
 			Events.writeOnInput(inputPasswordElement, password);
 			
 			WebElement inputConfirmPasswordElement = elementFetch.getWebElement("XPATH",
-					RegistroLoginElements.inputConfirPassword);
+					RegistroElements.inputConfirPassword);
 			wait.until(ExpectedConditions.visibilityOf(inputConfirmPasswordElement));
 			Events.writeOnInput(inputConfirmPasswordElement, password);
 			
 			WebElement inputBotonRegistroElement = elementFetch.getWebElement("XPATH",
-					RegistroLoginElements.inputRegisterBtn);
+					RegistroElements.inputRegisterBtn);
 			wait.until(ExpectedConditions.visibilityOf(inputBotonRegistroElement));
 			Events.clickButton(inputBotonRegistroElement);
 			
 			Thread.sleep(2000);
 			WebElement textoRegistroCompletadoElement = elementFetch.getWebElement("XPATH",
-					RegistroLoginElements.textoRegistroCompletado);
+					RegistroElements.textoRegistroCompletado);
 			wait.until(ExpectedConditions.visibilityOf(textoRegistroCompletadoElement));
 			
 			String registroExitoso = textoRegistroCompletadoElement.getText();

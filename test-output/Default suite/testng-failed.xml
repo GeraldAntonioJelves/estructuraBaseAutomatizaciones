@@ -3,7 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.java.carritocompras.DemoWebShopTest">
+      <class name="test.java.demoWebShop.DemoWebShopTest">
         <methods>
           <include name="afterTestMethod"/>
           <include name="afterMethodMethod"/>
@@ -11,7 +11,7 @@
           <include name="beforeTestMethod"/>
           <include name="CodigoCasoDePrueba"/>
         </methods>
-      </class> <!-- test.java.carritocompras.DemoWebShopTest -->
+      </class> <!-- test.java.demoWebShop.DemoWebShopTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

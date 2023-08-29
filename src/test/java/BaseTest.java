@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit;
 
 import main.java.utils.Constants;
 
-public class BaseTest {
+public class  BaseTest {
 
     public static WebDriver driver;
     public ExtentHtmlReporter htmlReporter;
@@ -45,8 +45,8 @@ public class BaseTest {
         htmlReporter.config().setTheme(Theme.DARK);
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
-        extent.setSystemInfo("Automation Tester", "[Nombre automatizador/es]");
-        extent.setSystemInfo("Project", "[Nombre proyecto]");
+        extent.setSystemInfo("Automation Tester", "Gerald Jelves");
+        extent.setSystemInfo("Project", "Demo Web Shop");
     }
 
     @BeforeMethod

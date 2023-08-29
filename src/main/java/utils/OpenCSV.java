@@ -1,5 +1,6 @@
 package main.java.utils;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -12,7 +13,7 @@ public class OpenCSV {
 			throws InterruptedException, CsvValidationException, IOException {
 
 		String curDir = System.getProperty("user.dir");
-		String filePath = curDir + "\\data\\" + path;
+		String filePath = curDir + File.separator + "/data/" + path;
 		
 		FileReader file = new FileReader(filePath);
 		

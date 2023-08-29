@@ -43,7 +43,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
   <testcase classname="test.java.BaseTest" name="@AfterMethod afterMethodMethod" time="-1.693236166798E9">
     <skipped/>
   </testcase> <!-- @AfterMethod afterMethodMethod -->
-  <testcase classname="test.java.carritocompras.DemoWebShopTest" name="CodigoCasoDePrueba" time="0.0">
+  <testcase classname="test.java.demoWebShop.DemoWebShopTest" name="CodigoCasoDePrueba" time="0.0">
     <skipped/>
   </testcase> <!-- CodigoCasoDePrueba -->
 </testsuite> <!-- Default test -->

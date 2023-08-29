@@ -6,12 +6,12 @@
     <groups>
     </groups>
     <test started-at="2023-08-28T11:39:43 CLT" name="Clase Automation QA" finished-at="2023-08-28T11:40:03 CLT" duration-ms="19599">
-      <class name="test.java.carritocompras.DemoWebShopTest">
-        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:test.java.carritocompras.DemoWebShopTest@790da477]" started-at="2023-08-28T11:39:43 CLT" name="beforeTestMethod" finished-at="2023-08-28T11:39:44 CLT" duration-ms="108" status="PASS">
+      <class name="test.java.demoWebShop.DemoWebShopTest">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:test.java.demoWebShop.DemoWebShopTest@790da477]" started-at="2023-08-28T11:39:43 CLT" name="beforeTestMethod" finished-at="2023-08-28T11:39:44 CLT" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:test.java.carritocompras.DemoWebShopTest@790da477]" started-at="2023-08-28T11:39:44 CLT" name="beforeMethodMethod" finished-at="2023-08-28T11:39:57 CLT" duration-ms="13028" status="PASS">
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:test.java.demoWebShop.DemoWebShopTest@790da477]" started-at="2023-08-28T11:39:44 CLT" name="beforeMethodMethod" finished-at="2023-08-28T11:39:57 CLT" duration-ms="13028" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,14 +20,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void test.java.carritocompras.DemoWebShopTest.CodigoCasoDePrueba(java.lang.String[]) throws java.lang.InterruptedException]]>
+                  <![CDATA[public void test.java.demoWebShop.DemoWebShopTest.CodigoCasoDePrueba(java.lang.String[]) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method signature="CodigoCasoDePrueba([Ljava.lang.String;)[pri:0, instance:test.java.carritocompras.DemoWebShopTest@790da477]" started-at="2023-08-28T11:39:57 CLT" name="CodigoCasoDePrueba" data-provider="demoWebShopData" finished-at="2023-08-28T11:40:03 CLT" duration-ms="6086" status="PASS">
+        <test-method signature="CodigoCasoDePrueba([Ljava.lang.String;)[pri:0, instance:test.java.demoWebShop.DemoWebShopTest@790da477]" started-at="2023-08-28T11:39:57 CLT" name="CodigoCasoDePrueba" data-provider="demoWebShopData" finished-at="2023-08-28T11:40:03 CLT" duration-ms="6086" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,22 +38,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CodigoCasoDePrueba -->
-        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:test.java.carritocompras.DemoWebShopTest@790da477]" started-at="2023-08-28T11:40:03 CLT" name="afterMethodMethod" finished-at="2023-08-28T11:40:03 CLT" duration-ms="79" status="PASS">
+        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:test.java.demoWebShop.DemoWebShopTest@790da477]" started-at="2023-08-28T11:40:03 CLT" name="afterMethodMethod" finished-at="2023-08-28T11:40:03 CLT" duration-ms="79" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CodigoCasoDePrueba status=SUCCESS method=DemoWebShopTest.CodigoCasoDePrueba([Ljava.lang.String;)[pri:0, instance:test.java.carritocompras.DemoWebShopTest@790da477] output={null}]]]>
+                  <![CDATA[[TestResult name=CodigoCasoDePrueba status=SUCCESS method=DemoWebShopTest.CodigoCasoDePrueba([Ljava.lang.String;)[pri:0, instance:test.java.demoWebShop.DemoWebShopTest@790da477] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:test.java.carritocompras.DemoWebShopTest@790da477]" started-at="2023-08-28T11:40:03 CLT" name="afterTestMethod" finished-at="2023-08-28T11:40:03 CLT" duration-ms="170" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:test.java.demoWebShop.DemoWebShopTest@790da477]" started-at="2023-08-28T11:40:03 CLT" name="afterTestMethod" finished-at="2023-08-28T11:40:03 CLT" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
-      </class> <!-- test.java.carritocompras.DemoWebShopTest -->
+      </class> <!-- test.java.demoWebShop.DemoWebShopTest -->
     </test> <!-- Clase Automation QA -->
   </suite> <!-- Sample Test Suite -->
 </testng-results>

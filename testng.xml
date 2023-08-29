@@ -7,7 +7,7 @@
 	<test name="Clase Automation QA">
 		<parameter name="browserName" value="chrome" />
 		<classes>
-			<class name="test.java.carritocompras.DemoWebShopTest" /> <!-- Ruta de la clase test -->
+			<class name="test.java.demoWebShop.DemoWebShopTest" /> <!-- Ruta de la clase test -->
 		</classes>
 	</test>
 </suite>
