@@ -13,9 +13,9 @@ import main.java.utils.Utils;
 import main.java.utils.Validations;
 import test.java.sitioCompras.Tests;
 
-public class RegistroDemoWebShopEvents extends Tests {
+public class RegistroUsuarioEvents extends Tests {
 
-	public RegistroDemoWebShopEvents(WebDriver driver) {
+	public RegistroUsuarioEvents(WebDriver driver) {
 		Tests.driver = driver;
 	}
 
@@ -31,7 +31,7 @@ public class RegistroDemoWebShopEvents extends Tests {
 			ElementFetch elementFetch = new ElementFetch();
 
 			WebElement aRegistroRelavitoElement = elementFetch.getWebElement("XPATH",
-					RegistroElements.aRegisterRelativo);
+					RegistroElements.linkRegisterRelativo);
 			wait.until(ExpectedConditions.visibilityOf(aRegistroRelavitoElement));
 			Events.clickButton(aRegistroRelavitoElement);
 			

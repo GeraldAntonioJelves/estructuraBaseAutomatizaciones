@@ -1,9 +1,9 @@
 package main.java.pageObjects;
 
-public interface RegistroLoginElements {
+public interface RegistroElements {
 
 	// a link 
-	String aRegisterRelativo = "//a[@class='ico-register' and text()='Register']"; 
+	String linkRegisterRelativo = "//a[@class='ico-register' and text()='Register']";
 	
 	// Text 
 	String TextRegistro = "//h1[text()='Register']";

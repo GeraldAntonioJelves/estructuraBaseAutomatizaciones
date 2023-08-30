@@ -2,22 +2,13 @@ package test.java.sitioCompras;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.opencsv.exceptions.CsvValidationException;
 
-import main.java.pageEvents.CarritoComprasEvents;
-import main.java.pageObjects.RegistroLoginElements;
-import main.java.utils.ElementFetch;
-import main.java.utils.Events;
 import main.java.utils.OpenCSV;
 import main.java.utils.Utils;
-import main.java.utils.Validations;
 import test.java.BaseTest;
 
 public class Tests extends BaseTest {

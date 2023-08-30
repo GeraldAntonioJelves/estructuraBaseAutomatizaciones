@@ -7,7 +7,7 @@
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.fail(Assert.java:106)
 at main.java.utils.Utils.eventFailed(Utils.java:43)
-at main.java.pageEvents.LoginEvents.iniciarSesion(LoginEvents.java:60)
+at main.java.pageEvents.LogInEvents.iniciarSesion(LoginEvents.java:60)
 at test.java.demoWebShop.CarritoComprasTest.QAS12(CarritoComprasTest.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)

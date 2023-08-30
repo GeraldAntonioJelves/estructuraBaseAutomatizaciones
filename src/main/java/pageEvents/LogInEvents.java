@@ -1,22 +1,22 @@
 package main.java.pageEvents;
 
 import main.java.pageObjects.LoginElement;
+import main.java.pageObjects.RegistroElements;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 
-import main.java.pageObjects.RegistroElements;
 import main.java.utils.ElementFetch;
 import main.java.utils.Events;
 import main.java.utils.Utils;
 import main.java.utils.Validations;
 import test.java.sitioCompras.Tests;
 
-public class LoginDemoWebShopEvents extends Tests {
+public class LogInEvents extends Tests {
 
-    public LoginDemoWebShopEvents(WebDriver driver) {
+    public LogInEvents(WebDriver driver) {
         Tests.driver = driver;
     }
 
@@ -56,10 +56,27 @@ public class LoginDemoWebShopEvents extends Tests {
             wait.until(ExpectedConditions.visibilityOf(inputPasswordElement));
             Events.writeOnInput(inputPasswordElement,password);
 
+            WebElement checkBoxRememberMe = elementFetch.getWebElement("XPATH",
+                    LoginElement.checkBoxRememberMe);
+            wait.until(ExpectedConditions.visibilityOf(checkBoxRememberMe));
+            Events.clickButton(checkBoxRememberMe);
+
+            Thread.sleep(3000);
             WebElement buttonLogInElement = elementFetch.getWebElement("XPATH",
                     LoginElement.buttonLogIn);
             wait.until(ExpectedConditions.visibilityOf(buttonLogInElement));
             Events.clickButton(buttonLogInElement);
+
+            WebElement linkUsuarioActualElement = elementFetch.getWebElement("XPATH",
+                    LoginElement.linkUsuarioActual);
+            wait.until(ExpectedConditions.visibilityOf(linkUsuarioActualElement));
+            String usuarioActual = linkUsuarioActualElement.getText();
+
+            if (usuarioActual == email){
+                System.out.println("El usuario ingresado actualmente es: "+email);
+            }else{
+                Utils.eventFailed(currentEvent, "No se ingreso correctamente al sitio web");
+            }
 
         } catch (Exception e) {
             Utils.eventFailed(currentEvent, e.getMessage());

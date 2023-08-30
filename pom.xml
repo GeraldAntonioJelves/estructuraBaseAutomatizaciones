@@ -39,7 +39,13 @@
     </repository>
 	</repositories>
 	<dependencies>
-			<dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.2.6</version> <!-- Utiliza la versión más reciente -->
+		</dependency>
+
+		<dependency>
     		<groupId>io.github.bonigarcia</groupId>
     		<artifactId>webdrivermanager</artifactId>
     		<version>5.5.0</version>
