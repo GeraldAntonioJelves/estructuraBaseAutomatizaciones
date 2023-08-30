@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import com.opencsv.exceptions.CsvValidationException;
 
 import main.java.pageEvents.CarritoComprasEvents;
-import main.java.pageEvents.LoginEvents;
+import main.java.pageEvents.RegistroSitioEvent;
 import main.java.utils.OpenCSV;
 import main.java.utils.Utils;
 import test.java.BaseTest;
@@ -16,19 +16,19 @@ import test.java.BaseTest;
 public class CarritoComprasTest extends BaseTest {
 
 	@Test(enabled = true, dataProvider = "carritoComprasData")
-	public void QAS12(String args[]) throws InterruptedException {
+	public void CasopruebaRegistroUsuario(String args[]) throws InterruptedException {
 
-		Utils.infoTestCase("Carrito de compras",
-				"Validar la generación de una compra al agregar un producto al carrito de compras");
+		Utils.infoTestCase("Register User",
+				"Validar que al registar un usuario se cree correctamente en el sitio web");
 
-		LoginEvents.iniciarSesion(args[0],args[1]);
+		RegistroSitioEvent.registroUsuario(args[0],args[1],args[2],args[3],args[4]);
 
 	}
 	
 	@DataProvider(name = "carritoComprasData")
 	public Object[][] dataBrokerAPAlternative() throws CsvValidationException, InterruptedException, IOException {
 
-		Object[][] data = OpenCSV.getCSVParameters("CSVParametersCarritoCompras.csv", 1, 2);
+		Object[][] data = OpenCSV.getCSVParameters("CSVParametersCarritoCompras.csv", 1, 5);
 		return data;
 	}
 }

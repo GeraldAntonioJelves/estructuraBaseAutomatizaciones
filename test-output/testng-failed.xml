@@ -9,9 +9,9 @@
     <classes>
       <class name="test.java.carritocompras.CarritoComprasTest">
         <methods>
+          <include name="CasopruebaRegistroUsuario" invocation-numbers="0"/>
           <include name="afterTestMethod"/>
           <include name="afterMethodMethod"/>
-          <include name="QAS12" invocation-numbers="0"/>
           <include name="beforeMethodMethod"/>
           <include name="beforeTestMethod"/>
         </methods>

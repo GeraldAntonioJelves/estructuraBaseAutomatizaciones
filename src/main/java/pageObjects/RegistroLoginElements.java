@@ -7,6 +7,7 @@ public interface RegistroLoginElements {
 	
 	//Text 
 	String TextRegistro = "//h1[text()='Register']";
+	String TextRegistroConfirm = "//div[@class='result' and contains(text(),'Your registration completed')]";
 	
     // input 
     String inputSexoM = "//input[@id='gender-male']";
@@ -16,11 +17,10 @@ public interface RegistroLoginElements {
     String inputEmail = "//input[@id='Email']";
     String inputPassword = "//input[@id='Password']";
     String inputConfirPassword = "//input[@id='ConfirmPassword']";
-    String inputRegisterBtn = "//input[@id='register-button']"; 
       
-      
-
 	// button
+    String btnRegister = "//input[@id='register-button']"; 
+    String btnContinuar = "//input[@class='button-1 register-continue-button' and @value='Continue' ]";
 
 	
 
